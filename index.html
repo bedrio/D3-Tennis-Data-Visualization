@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO Change name -->
+    <title>CSE 494 | Fall 2021 | Project</title>
+    <link rel='stylesheet' href='css/styles.css'>   
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='scripts/homework4.js'></script>
+</head>
+<body>
+    <h1>Title</h1>
+    <h2>Who Are The Big Three?</h2>
+    <p>Placeholder</p>
+    <h2>Roger Federer</h2>
+    <p>Placeholder</p>
+    <h2>Rafael Nadal</h2>
+    <p>Placeholder</p>
+    <h2>Novak Djokovic</h2>
+    <p>Placeholder</p>
+
+    <h2>Where Their Strength Lies</h2>
+    &nbsp;Player&nbsp;
+    <select id='player_select' onchange="update_player_attribute()">
+        <option value='roger_federer'>Roger Federer</option>
+        <option value='rafael_nadal'>Rafael Nadal</option>
+        <option value='novak_djokovic'>Novak Djokovic</option>
+    </select>
+    &nbsp;Competition Type&nbsp;
+    <select id='competition_select' onchange="update_competition_attribute()">
+        <option value='atp_tour'>ATP</option>
+        <option value='grand_slams'>Grand Slams</option>
+    </select>
+    <br>
+    <svg id="pie_slam">
+
+    </svg>
+
+    <h2>Rise of The Big Three</h2>
+    <br>
+    <svg id="bar_race">
+
+    </svg>
+</body>
+</html>
