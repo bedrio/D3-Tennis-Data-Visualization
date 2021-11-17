@@ -8,8 +8,8 @@
     <!-- TODO Change name -->
     <title>CSE 494 | Fall 2021 | Project</title>
     <link rel='stylesheet' href='css/styles.css'>   
-    <script src='https://d3js.org/d3.v5.min.js'></script>
-    <script src='scripts/homework4.js'></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src='scripts/project.js'></script>
 </head>
 <body>
     <h1>Title</h1>
@@ -24,20 +24,21 @@
 
     <h2>Where Their Strength Lies</h2>
     &nbsp;Player&nbsp;
-    <select id='player_select' onchange="update_player_attribute()">
-        <option value='roger_federer'>Roger Federer</option>
-        <option value='rafael_nadal'>Rafael Nadal</option>
-        <option value='novak_djokovic'>Novak Djokovic</option>
+    <select id='player_select' onchange="draw_pie_chart()">
+        <option value='0'>Roger Federer</option>
+        <option value='1'>Rafael Nadal</option>
+        <option value='2'>Novak Djokovic</option>
     </select>
     &nbsp;Competition Type&nbsp;
-    <select id='competition_select' onchange="update_competition_attribute()">
-        <option value='atp_tour'>ATP</option>
+    <select id='competition_select' onchange="draw_pie_chart()">
         <option value='grand_slams'>Grand Slams</option>
+        <option value='atp'>ATP Titles</option>
     </select>
     <br>
     <svg id="pie_slam">
 
     </svg>
+    <div id="tooltip"></div>
 
     <h2>Rise of The Big Three</h2>
     <br>

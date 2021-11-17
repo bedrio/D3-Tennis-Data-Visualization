@@ -11,3 +11,27 @@ h1 {
 h2 {
     color: #3C638E;
 }
+
+#pie_slam {
+    width: 600px;
+    height: 400px;
+    border:1px solid gray;
+}
+
+#bar_race {
+    width: 600px;
+    height: 400px;
+    border:1px solid gray;
+}
+
+#tooltip {
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0;
+    border: 1px solid;
+    padding: 2px;
+}
