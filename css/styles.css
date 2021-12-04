@@ -1,11 +1,14 @@
 html {
     font-family: "Roboto", "Montserrat", sans-serif;
-    /* color: #6C935C; */
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #eceff4;
     /* color: #3C638E; */
 }
 
 h1 {
     color: #6C935C;
+    text-align: center;
 }
 
 h2 {
@@ -14,6 +17,11 @@ h2 {
 
 svg {
     border:1px solid gray;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
 }
 
 #federer_chart {
@@ -48,18 +56,15 @@ svg {
 }
 
 #federer_picture {
-    width: 25%;
-    height: 25%;
+    height: 400px;
 }
 
 #nadal_picture {
-    width: 25%;
-    height: 25%;
+    height: 400px;
 }
 
 #djokovic_picture {
-    width: 18%;
-    height: 18%;
+    height: 400px;
 }
 
 #tooltip {

@@ -17,7 +17,7 @@
     <script src='scripts/barRace.js'></script>
 </head>
 <body>
-    <h1>Title</h1>
+    <h1>The Domination of the Big 3 in Tennis</h1>
     <h2>Who Are The Big Three?</h2>
     <p>
         The Modern Era of Men’s Tennis saw a Golden age that spanned the last two decades and is arguably still not over. At the top of this golden era are three peaks, all at the height of 20 Slams (the joint highest in history). Each peak looks dramatically different from the other, one is a rocky and physical climb, one challenges your mind and only the most stoic can survive and one demands that you float with grace to the top. And while these three peaks are not accessible to mortals, the titans who sit atop have decimated the rest of the field into green plains, entertaining but nothing to brag about. The Big 3 are the overwhelming force of nature that defined the modern game, Federer, Nadal and Djokovic are without question the greatest who ever played the game.
@@ -26,24 +26,31 @@
     <p>
         If Nadal represents a high floor then Federer represents the highest ceiling. It is not uncommon to hear the phrase “Federer went God Mode today.” in tennis circles and for good reason, the sheer talent and skill of Federer put him a class apart. While he is somewhat lacking in mental fortitude (only when compared to the other two) he makes up for it with a fiery love for the game and the highest level that a tennis player can reach. When Federer’s at his best, no-one is better as shots will leave you in equal parts flummoxed and enthralled, his weaving of magic will pull you in and seal your fate.
     </p>
-    <img id="federer_picture" src="images/federer.png" />
-    <svg id="federer_chart">
+    <div class="flexContainer">
+        <img id="federer_picture" src="images/federer.png" />
+        <svg id="federer_chart"></svg>
+    </div>
+    <p>
+        Federer’s grace is long lasting and consistent, on the top of the sport since 2003 and the oldest World No 1 in tennis history at 36. He also has participated the most in the end stages of a Grand Slam, Federer has been a consistent player at grand slams his entire career.
+    </p>
 
-    </svg>
     <h2>Rafael Nadal - The Bull</h2>
     <p>
         Nadal is a beast who can run through brick walls. Any tennis player who has had the misfortune to face him has faced the pressure of Nadal’s powerful, spiteful strokes, packed with a wallop of top-spin that make them nearly impossible to hit back (especially on his favourite clay courts). But more importantly they have faced the “never die” attitude, the ability to chase down every ball and give every point his very best. Nadal truly respects his opponents and demonstrates his respect by not exposing a second of weakness. If you plan to take on the beast better come prepared to never stop fighting.
     </p>
-    <img id="nadal_picture" src="images/Nadal.png" />
-    <svg id="nadal_chart">
+    <div class="flexContainer">
+        <svg id="nadal_chart"></svg>
+        <img id="nadal_picture" src="images/Nadal.png" />
+    </div>
+    <p>
+        Nadal’s looping forehand clears the net at a much higher level than his opposition. This makes his ball very spinny and it bounces high a true terror on clay. A moon ball from hell!
+    </p>
 
-    </svg>
     <h2>Novak Djokovic - The Rock</h2>
     <p>
         “First he takes your legs, then he takes your soul”, are the words to describe Djokovic. Coming from Serbia and hardened by developing his talent in a nation plagued by war, Djokovic tempered his youth to achieve a mental fortitude that’s frightening. A dominating presence on the court his percentage tennis and excellent game sense as well as his deep groundtrokes and excellent return game make him a true terror to face. Any weakness shown will be exploited and not even the best are exempt. That’s the reason Djokovic has persisted as the World No 1 still and is (seemingly) the last of the big 3 standing.
-    </p>    
-    <img id="djokovic_picture" src="images/djokovic.png" />
-    &nbsp;Player&nbsp;
+    </p>
+    &nbsp;Player Against Djokovic&nbsp;
     <select id='player_select_donut' onchange="draw_djokovic_chart()">
         <option value='0'>Roger Federer</option>
         <option value='1'>Rafael Nadal</option>
@@ -52,11 +59,20 @@
         <option value='4'>Del Potro</option>
         <option value='5'>Marin Cilic</option>
     </select>
-    <svg id="djokovic_chart">
+    <div class="flexContainer">
+        <img id="djokovic_picture" src="images/djokovic.png" />
+        <svg id="djokovic_chart">
 
-    </svg>
+        </svg>
+    </div> 
+    <p>
+        Djokovic’s mental strength is on full display, his win percentage is imperious, even better than the “never die attitude” of Nadal.
+    </p>
 
     <h2>Where Their Strength Lies</h2>
+    <p>
+        The stylistic differences of the Big 3 make their performance on different surfaces vary. While all three are probably also some of the greatest all courters their respective surfaces draw out their very best. Federer on grass is a magical watch as his aggressive game and soft touch lead to quick dismissal of all but his toughest opposition. Djokovic's serene control works best on hardcourts where the conditions are steady. And who can forget Nadal’s domination of clay, the looping high top-spinned forehands that have allowed him to win a single slam 13 times!
+    </p>
     &nbsp;Player&nbsp;
     <select id='player_select' onchange="draw_pie_chart()">
         <option value='0'>Roger Federer</option>
@@ -74,6 +90,9 @@
     </svg>
     <div id="tooltip"></div>
 
+    <p>
+        The Big 3's rise to historic records and cementing their legacies as the greatest over the years
+    </p>
     <h2>Rise of The Big Three</h2>
     <br>
     &nbsp;
