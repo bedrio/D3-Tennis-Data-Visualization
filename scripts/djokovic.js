@@ -106,6 +106,21 @@ function draw_djokovic_chart() {
     g.append('text')
         .attr('class','graphTitle')
         .attr('y', -djokovic_innerHeight/1.8)
-        .attr('dx',-djokovic_innerWidth/4)
+        .attr('dx',-djokovic_innerWidth/3)
         .text("Djokovic vs " + value_to_name(selected_player) + " Win Rate");
+
+    g.append("rect")
+        .attr("height",20)
+        .attr("width",20)
+        .style("fill", "#46E89B")
+        .attr('x', 165)
+        .attr('y', 117)
+    g.append("rect")
+        .attr("height",20)
+        .attr("width",20)
+        .style("fill", "#F1766E")
+        .attr('x', 165)
+        .attr('y', 145)
+    g.append("text").attr("x", 190).attr("y", 130).text("Djokovic Wins").style("font-size", "15px").attr("alignment-baseline","middle")
+    g.append("text").attr("x", 190).attr("y", 160).text("Djokovic Losses").style("font-size", "15px").attr("alignment-baseline","middle")
 }

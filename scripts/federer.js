@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         federer_svg = d3.select('#federer_chart');
         federer_width = +federer_svg.style('width').replace('px','');
         federer_height = +federer_svg.style('height').replace('px','');
-        federer_margin = { top:20, bottom: 60, right: 20, left: 120 };
+        federer_margin = { top:30, bottom: 60, right: 20, left: 120 };
         federer_innerWidth = federer_width - federer_margin.left - federer_margin.right;
         federer_innerHeight = federer_height - federer_margin.top - federer_margin.bottom;
 
@@ -84,4 +84,10 @@ function draw_federer_chart() {
         .attr('x',federer_innerWidth/2)
         .attr('y',federer_innerHeight+50)
         .text('Grand Slam Top 4 Appearances')
+    
+    g.append('text')
+        .attr('class','graphTitle')
+        .attr('y', -7)
+        .attr('x', 30)
+        .text("Grand Slam Appearnces by Player");
 }
