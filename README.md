@@ -8,7 +8,7 @@ Arya Tawde, ASU ID: 1217536502
 
 ## **Overview:**
 
-////Insert Image Here Bader  A teaser image of your system. The image file should be named thumbnail.png of size 1280 x 720 px.////
+![Thumbnail](https://github.com/asu-cse494-f2021/Project-Arya-Beder-Chetana/blob/master/images/thumbnail.png?raw=true)
 
 The project seeks to illustrate visually the domination of the Big 3 of Men’s tennis, a three- era defining geniuses who happened to co-exist and dominated the field. We use statistics such as their grand slam records, particular surface domination, head to head scores, to highlight their stylistic differences and show the completely different ways the 3 dominate. We capture the narrative of the last two decades of men’s tennis by showing three players who were each world no 1 as the game evolved and their respective styles suited it more. We use different charts to demonstrate their different fields of domination, mental in the case of Djokovic, power and athleticism in the case of Nadal and the longevity and consistency of Federer.
 
