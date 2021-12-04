@@ -1,10 +1,7 @@
-﻿Novak Djokovic,988–199,83.2
-Rafael Nadal,1028–209,83.1
-Bjorn Borg,654–140,82.4
-Roger Federer,1251–275,82
-Jimmy Conners,1274–283,81.8
-John McEnroe,883–198,81.7
-Ivan Lendl,1068–242,81.5
-Rod Laver,576–146,79.8
-Pete Sampras,762–222,77.4
-Boris Becker,713–214,76.9
+﻿player,wins,losses,percentage
+Roger Federer,27,23,0.54
+Rafael Nadal,29,28,0.50877193
+Andy Murray,25,11,0.694444444
+Stan Wawrinka,19,6,0.76
+Del Potro,16,4,0.8
+Marin Cilic,17,2,0.894736842

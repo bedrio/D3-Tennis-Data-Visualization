@@ -9,7 +9,7 @@ let federer_innerHeight;
 
 //TODO change dataset
 document.addEventListener('DOMContentLoaded', function() {
-    Promise.all([d3.csv("data/Top_Spin_Nedal.csv")])
+    Promise.all([d3.csv("data/Top_Spin_nadal.csv")])
     .then(function(values){  
         data_federer = values[0];
 
