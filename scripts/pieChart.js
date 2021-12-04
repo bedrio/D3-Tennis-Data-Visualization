@@ -27,6 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
+function competition_to_text(selected_competition) {
+    switch(selected_competition) {
+        case "grand_slams":
+            return "Grand Slams";
+        case "atp":
+            return "ATP";
+    }
+}
+
+function value_to_text(value) {
+    switch(value) {
+        case 0:
+            return "Roger Federer";
+        case 1:
+            return "Rafael Nadal";
+        case 2:
+            return "Novak Djokovic";
+    }
+}
+
 function draw_pie_chart() {
     let selected_player = +document.getElementById("player_select").value;
     let selected_competition = document.getElementById("competition_select").value
@@ -114,4 +134,10 @@ function draw_pie_chart() {
             d3.select("#tooltip") 
                 .style("opacity", 0)
         })
+
+    g.append('text')
+        .attr('class','graphTitle')
+        .attr('y', -pie_innerHeight/1.8)
+        .attr('x', -pie_innerWidth/2.8)
+        .text("Percentage of " + competition_to_text(selected_competition) + " Wins For " + value_to_text(selected_player));
 }
