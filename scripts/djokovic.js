@@ -25,14 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
-function draw_legend() {
-    djokovic_svg = d3.select('#legend_1');
-    svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#69b3a2")
-    svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#404080")
-    svg.append("text").attr("x", 220).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", 220).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
-}
-
 function value_to_name(value) {
     switch(value) {
         case 0:
