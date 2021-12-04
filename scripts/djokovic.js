@@ -20,10 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         djokovic_innerHeight = djokovic_height - djokovic_margin.top - djokovic_margin.bottom;
 
         draw_djokovic_chart()
-        draw_djokovic_chart()
+        draw_legend()
     })
   
 });
+
+function draw_legend() {
+    djokovic_svg = d3.select('#legend_1');
+    svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#69b3a2")
+    svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#404080")
+    svg.append("text").attr("x", 220).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 220).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
+}
 
 function value_to_name(value) {
     switch(value) {
@@ -108,5 +116,5 @@ function draw_djokovic_chart() {
         .attr('class','graphTitle')
         .attr('y', -djokovic_innerHeight/1.8)
         .attr('dx',-djokovic_innerWidth/4)
-        .text(value_to_name(selected_player) + " vs Djokovic Win Rate");
+        .text("Djokovic vs " + value_to_name(selected_player) + " Win Rate");
 }
