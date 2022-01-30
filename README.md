@@ -2,9 +2,7 @@
 
 ## **Team Members:**
 
-Bader Rifai, ASU ID: 1216610005
-
-Arya Tawde, ASU ID: 1217536502
+[Arya Tawde](https://github.com/AryaCodes), [Bader Rifai](https://github.com/bedrio)
 
 ## **Overview:**
 
