@@ -19,6 +19,10 @@ svg {
     border:1px solid gray;
 }
 
+.legend {
+    border:0px solid gray
+}
+
 .flexContainer {
     display: flex;
     justify-content: space-between;
